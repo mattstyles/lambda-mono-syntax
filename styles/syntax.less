@@ -7,66 +7,66 @@
  */
 
 .comment {
-  color: @gray600;
+  color: @titanium800;
 }
 
 .keyword {
-  color: @mercury;
+  color: @titanium200;
 
   &.control {
-    color: @yellow;
+    color: @titanium700;
   }
 
   &.operator {
-    color: @syntax-text-color;
+    color: @titanium800;
   }
 
   &.other.special-method {
-    color: @cyan;
+    color: @titanium200;
   }
 
   &.other.unit {
-    color: @mercury;
+    color: @titanium700;
   }
 
   &.regexp {
-    color: @red;
+    color: @titanium200;
   }
 }
 
 .storage {
-  color: @yellow;
+  color: @titanium800;
 }
 
 .constant {
-  color: @mercury;
+  color: @titanium300;
 
   &.character.escape {
-    color: @mercury;
+    color: @titanium200;
   }
 
   &.numeric {
-    color: @mercury;
+    color: @titanium200;
   }
 
   &.other.color {
-    color: @mercury;
+    color: @titanium200;
   }
 
   &.other.symbol {
-    color: @mercury;
+    color: @titanium200;
   }
 
   &.regexp {
-    color: @red;
+    color: @titanium500;
   }
 }
 
 .variable {
-  color: @yellow;
+  color: @titanium100;
 
   &.interpolation {
-    color: darken(@red, 10%);
+    color: @titanium200;
   }
 
   &.parameter.function {
@@ -74,28 +74,28 @@
   }
 
   &.less {
-    color: @cyan;
+    color: @titanium200;
   }
 }
 
 .invalid.illegal {
-  background-color: @red;
-  color: @syntax-background-color;
+  background-color: @titanium700;
+  color: @titanium100;
 }
 
 .string {
-  color: @cyan;
+  color: @titanium100;
 
   &.regexp {
-    color: @red;
+    color: @titanium400;
 
     .source.ruby.embedded {
-      color: @red;
+      color: @titanium400;
     }
   }
 
   &.other.link {
-    color: @red;
+    color: @titanium400;
   }
 }
 
@@ -110,7 +110,7 @@
     }
 
     &.keyword {
-      color: @yellow;
+      color: @titanium200;
     }
 
     &.string,
@@ -122,7 +122,7 @@
 
     &.heading,
     &.identity {
-      color: @purple;
+      color: @titanium300;
     }
 
     &.bold {
@@ -131,31 +131,31 @@
     }
 
     &.italic {
-      color: @purple;
+      color: @titanium300;
       font-style: italic;
     }
 
     &.regexp {
-      color: @red;
+      color: @titanium100;
     }
   }
 
   &.section.embedded {
-    color: darken(@red, 10%);
+    color: darken(@titanium300, 10%);
   }
 
 }
 
 .support {
   &.class {
-    color: @mercury;
+    color: @titanium200;
   }
 
   &.function  {
-    color: @cyan;
+    color: @titanium200;
 
     &.any-method {
-      color: @cyan;
+      color: @titanium200;
     }
 
     &.less {
@@ -170,19 +170,19 @@
 
 .entity {
   &.name.function {
-    color: @mercury;
+    color: @titanium600;
   }
 
   &.name.type {
-    color: @red;
+    color: @titanium300;
   }
 
   &.name.class, &.name.type.class {
-    color: @light-orange;
+    color: @titanium300;
   }
 
   &.name.section {
-    color: @cyan;
+    color: @titanium300;
   }
 
   &.name.tag {
@@ -191,11 +191,11 @@
   }
 
   &.other.inherited-class {
-    color: @green;
+    color: @titanium300;
   }
 
   &.other.attribute-name {
-    color: @yellow;
+    color: @titanium700;
 
     &.id {
       color: @yellow;
@@ -206,38 +206,42 @@
 .meta {
   color: @light-gray;
   &.class {
-    color: @red;
+    color: @titanium100;
   }
 
   &.link {
-    color: @cyan;
+    color: @titanium800;
   }
 
   &.require {
-    color: @cyan;
+    color: @titanium800;
   }
 
   &.selector {
     color: @light-gray;
   }
 
+  &.delimiter {
+    color: @titanium700;
+  }
+
   &.separator {
-    background-color: @gray;
-    color: @syntax-text-color;
+    background-color: @titanium800;
+    color: @titanium800;
   }
 
   &.tag.sgml {
-    color: @darkRed;
+    color: @titanium800;
   }
 
   &.id.toc-list {
-    color: @purple;
+    color: @titanium800;
   }
 }
 
 .regexp {
   &.constant.character {
-    color: @red;
+    color: @titanium800;
   }
 }
 
@@ -257,11 +261,11 @@
   }
 
   &.changed {
-    color: @green;
+    color: @titanium800;
   }
 
   &.deleted {
-    color: @red;
+    color: @titanium800;
   }
 
   &.heading {
@@ -270,7 +274,7 @@
   }
 
   &.inserted {
-    color: @green;
+    color: @titanium800;
   }
 
   &.list {

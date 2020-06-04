@@ -1,9 +1,9 @@
 {
-  "name": "lambda-mono",
+  "name": "lambda-mono-syntax",
   "theme": "syntax",
   "version": "0.0.0",
   "description": "Monochrome dark low contrast syntax theme to complement lambda-ui",
-  "repository": "https://github.com/mattstyles/lambda-mono",
+  "repository": "https://github.com/mattstyles/lambda-mono-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"

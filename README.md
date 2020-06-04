@@ -1,5 +1,5 @@
-# lamdba-syntax theme
+# lamdba-mono-syntax theme
 
-Minimalist dark low contrast syntax theme to complement [lambda-ui](https://github.com/mattstyles/lambda-ui).
+Monochrome dark low contrast syntax theme to complement [lambda-ui](https://github.com/mattstyles/lambda-ui).
 
-![](https://raw.github.com/mattstyles/lambda-syntax/master/screenshots/js.png)
+![](https://raw.github.com/mattstyles/lambda-mono-syntax/master/screenshots/js.png)
