@@ -1,0 +1,99 @@
+@import "syntax-variables";
+
+:host,
+atom-text-editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .scroll-view {
+    padding-left: .5em;
+  }
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+    overflow:visible;
+
+    .line-number {
+      &.cursor-line {
+        position:relative;
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+
+        // Right arrow - only works at a fixed text size, about 14px, adjust the border top & bottom for different sizes
+        &:before {
+          display: none;
+          content: ' ';
+          position:absolute;
+          top: 0;
+          right: -5px;
+          height: 0px;
+          background-color: transparent;
+          width: 0px;
+
+          border-top: 9px solid transparent;
+          border-bottom: 9px solid transparent;
+          border-left: 5px solid @syntax-gutter-background-color-selected;
+        }
+      }
+
+      &.cursor-line-no-selection {
+        color: @syntax-gutter-text-color-selected;
+      }
+    }
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @gray400;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }
+
+  .bracket-matcher .region {
+    background-color: @syntax-selection-color;
+    border-bottom: 1px solid @gray100;
+  }
+
+  .spell-check .misspelling {
+    border-bottom: 1px dashed @darkRed;
+  }
+
+  &.is-focused .selection .region {
+    background-color: @syntax-selection-color;
+  }
+}
+
+// @TODO check on these, they should be in the block above
+:host,
+atom-text-editor .search-results {
+  .marker .region {
+    background-color: @selectionYellow;
+  }
+  .marker.current-result .region {
+    background-color: @syntax-selection-color;
+  }
+}
+
+atom-text-editor[mini] .scroll-view {
+  padding-left: 1px;
+}
